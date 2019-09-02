@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- font awesome -->
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+        Import Google Icon Font -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=(any font of your choice)"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="owlCarousel/owl.carousel.css"/>
+    <link rel="stylesheet" href="owlCarousel/owl.theme.default.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=IM+Fell+Double+Pica:400i|Raleway:400,700&display=swap" rel="stylesheet" type="text/css"/>
+    <!-- Compiled and minified CSS -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css"> -->
+    <link
+      href="materialize-v1.0.0/materialize/css/materialize.min.css"
+      type="text/css"
+      rel="stylesheet"
+    />
+    <title>Providence Research Ltd.</title>
+    <script src="https://kit.fontawesome.com/5efbf3f5a1.js"></script>
+
+    <style>
+      body {
+        font-family: "Raleway", sans-serif;
+        font-size: 16px;
+      }
+
+      .slider img{
+        filter: brightness(20%);
+      }
+      .slider .slides {
+        height: 20vh;
+      }
+
+      ul .dropdown-content li a{
+        color:black !important;
+      }
+
+      .h3-lg {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 52px;
+        line-height: 30px;
+        color: #ffffff;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
+      }
+
+      .bold {
+        font-weight: 800;
+      }
+
+      .bold1 {
+        font-weight: 600;
+      }
+
+      .boldrow {
+          font-weight:700;
+          font-size:20px;
+      }
+
+      .h3-lg2 {
+        font-style: normal;
+        font-weight: 800;
+        font-size: 52px;
+        line-height: 30px;
+        margin: 0px;
+        color: #ffffff;
+      }
+
+      .h-sml {
+        font-family: Raleway;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 25px;
+        margin: 0px;
+        text-align: justify;
+        display: block;
+      }
+
+      .h-sml2 {
+        font-family: Raleway;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 20px;
+        margin: 0px;
+        padding-left: 20px;
+        text-align: justify;
+        display: block;
+      }
+
+      .slider .slides li .caption {
+        width: 60%;
+        left: 10%;
+        top: 30%;
+      }
+
+      .card {
+        /* width:394px; */
+        /* height:600px; */
+      }
+      .container {
+        width: 90%;
+      }
+
+      .logofont {
+        /* font-family: 'Pacifico', cursive; */
+        font-family: "IM Fell Double Pica", serif;
+      }
+
+      .primarycolor {
+        color: #08aaeb !important;
+      }
+      .secondarycolor {
+        background-color: #DEF1FB !important;
+      }
+      .accentcolor {
+        color: #eb5008 !important;
+      }
+      .accentcolorbg {
+        background-color: #eb5008 !important;
+      }
+      .footercolor{
+        background-color:#3E3E3E;
+      }
+      .footertextcolor{
+        color:#AFACAC;
+        font-size: 18px;
+      }
+      .footertext{
+        color:#AFACAC;
+        font-size: 12px;
+      }
+      .hrcolor{
+        border:0.7px solid #6f6c6c;
+      }
+      .navbartext a {
+        color: black;
+      }
+      .navbartext li:hover {
+        color: red;
+      }
+      .headings{
+        color: #292929;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 52px;
+        line-height: 30px;
+      }
+      .alignwell {
+        display: flex;
+      }
+      #Services {
+        background-color: #DEF1FB;
+        height: 80vh;
+      }
+      .touch{
+          background-image: url(images/phone3.jpg);
+          height:95vh;
+          background-size:cover;
+      }
+      .footer{
+        height:20vh;
+        padding:5px;
+      }
+      #footer ul{
+        margin-bottom: 0px;
+      }
+      .pagination{
+        margin:0px 0 4px 0;
+      }
+      .pagination li{
+        height:50px;
+        margin-left: 40px;
+      }
+      /* .pagination li:hover{
+        border-bottom: 1px solid #eb5008;
+      } */
+
+      textarea{
+        background: transparent;
+        border: 1px solid #fff;
+        box-sizing: border-box;
+        height: 250px;
+        left: 161px;
+      }
+      hr{
+        margin-top: 0px;
+        padding-top: opx;
+        width:80%;
+        border: 1px solid #C4C4C4;
+        align-content: center;
+      }
+      /* .txtb{
+        background: #FFFFFF;
+        height:70px;
+        border: 1px solid #EB5008;
+      } */
+    /* .contact-form{
+        background:transparent;
+        box-sizing:border-box;
+        border-color: #08aaeb;
+        border-radius:8px;
+        border:3px solid #08aaeb; */
+
+    /* } */
+      .featured-item {
+        display: flex;
+        align-items: center;
+      }
+      .icon{
+        margin-top:-60px;
+      }
+      .featured-item p {
+        /* margin: 10px;
+         padding: 10px;
+         transition: margin 300ms; */
+        text-align: justify;
+      }
+      .featured-item img:hover {
+        margin-left: 4px;
+      }
+
+      .whatwedo .card{
+            height:65vh;
+            transition: transform .2s;
+        }
+
+        .whatwedo .card:hover{
+          background-color:#DEF1FB;
+          transform: scale(1.1);
+        }
+
+      .mg-bt {
+        margin-bottom: 70px;
+      }
+      .mg-tp {
+        margin-top: 60px;
+      }
+
+      .btn:hover{
+          color:#000000;
+      }
+
+      .card-content {
+        line-height: 1.5rem;
+      }
+
+      .social i {
+        margin-left:30px;
+        font-size: 40px;
+        color:#eb5008;
+      }
+
+      .brand-carousel .item{
+       margin: 3px;
+       height: 20px;
+      }
+      .brand-carousel img{
+      display: block;
+      width: 20%;
+      height: auto;
+      }
+      .owl-dots{
+        text-align:center;
+      }
+
+      .navbartext li:hover{
+        background-color: #DEF1FB;
+        border-radius: 8px;
+      }
+      .owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-next, .owl-carousel button.owl-dot{
+        display:inline-block;
+        height:15px !important;
+        width: 15px !important;
+        background:#222;
+        border-radius: 50%;
+        margin: 0 5px;
+      }
+      button.owl-dot.active{
+        background:#eb5008;
+      }
+
+      .section-padding{
+        padding:40px 0;
+      }
+
+      .brand-carousel{
+        margin-top: 3%;
+      }
+
+      .card .card-action{
+        margin:-10px 0px 0px 0px;
+        padding:0px;
+        border-top:0px;
+      }
+
+      .footerlogo div{
+        padding:10px;
+        background:#dddddd;
+        /* border-left:6px solid #fff; */
+        line-height:60px;
+      }
+      @media screen and (max-width: 700px) {
+        /* header{
+                        min-height:500px;
+                    } */
+        .h3-lg {
+          font-style: normal;
+          font-weight: 800;
+          font-size: 40px;
+          line-height: 4rem;
+          margin: 0px;
+          color: #ffffff;
+        }
+
+        .headings{
+          color:#282828;
+          font-weight: 800;
+          font-size: 40px;
+          line-height: 4rem;
+          margin: 0px;
+        }
+
+        .h3-lg2 {
+          font-style: normal;
+          font-weight: 800;
+          font-size: 52px;
+          line-height: 4rem;
+          margin: 8px 0px;
+          color: #ffffff;
+          justify-content: left;
+        }
+        
+
+        .slider .slides li .caption {
+          width: 80%;
+          left: 10%;
+          top: 30%;
+        }
+        .footer{
+        height:40vh;
+      }
+        .touch{
+            height:auto;
+        }
+        .whatwedo .card{
+          /* align-self: auto; */
+          height:auto;
+        }
+        .headings{
+          font-size: 32px;
+          margin:20px 0px 0px 20px;
+          padding:20px 0px 0px 20px;
+          align-content: center;
+        }
+        .whatwedo h1 {
+          margin-top: 10px;
+          font-style: bold;
+        }
+        #Services{
+            /* min-height: 1100px; */
+            height: auto;
+            margin-left: 0px;
+          
+        }
+        
+        #Services .mg-tp{
+            margin-top: 20px;
+        }
+        .pagination li{
+        height:30px;
+        margin-left: 10px;
+      }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!--Navbar-->
+    <header>
+
+      <!--this is the drop down for the navigation bar-->
+      <!--this is the drop down for the navigation bar-->
+      <div>
+          <ul class = "dropdown-content" id="aboutus">
+            <li><a href="about-us.html#whoweare">Who we are</a></li>
+            <li class="divider" tabindex="-1"></li>
+            <li><a href="about-us.html#mission#cooperateresponsibilities">Mission</a></li>
+            <li class="divider" tabindex="-1"></li>
+            <li><a href="about-us.html">Co-operate Responsibility</a></li>
+            <li class="divider" tabindex="-1"></li>
+            <li><a href="about-us.html#team">Team</a></li>
+          </ul>
+        </div>
+       <div>
+          <ul class = "dropdown-content" id="projects">
+            <li><a href="projects.html#engineeringprocurementcontrol">Engineering Procurement & Control</a></li>
+            <li class="divider" tabindex="-1"></li>
+            <li><a href="projects.html#systemintegrationprojects">System Integration Projects</a></li>
+            <li class="divider" tabindex="-1"></li>
+            <li><a href="projects.html#controlautomation">Control & Automation</a></li>
+            <li class="divider" tabindex="-1"></li>
+            <li><a href="projects.html#training">Training</a></li>
+          </ul>
+        </div>
+       <div>
+          <ul class = "dropdown-content" id="service">
+            <li><a href="services.html#controlautomation">Control & Authomation</a></li>
+            <li class="divider" tabindex="-1"></li>
+            <li><a href="services.html#systemintegration">System Integration</a></li>
+            <li class="divider" tabindex="-1"></li>
+            <li><a href="services.html#engineeringprocurement">Engineering procurement</a></li>
+            <li class="divider" tabindex="-1"></li>
+            <li><a href="services.html#softwaresolutions">Software Solutions</a></li>
+          </ul>
+        </div>
+        <div>
+            <ul class = "dropdown-content" id="products">
+              <li><a href="products.html#turbotronics">Turbotronics</a></li>
+              <li class="divider" tabindex="-1"></li>
+              <li><a href="products.html#boilercontrol">Boiler Control</a></li>
+              <li class="divider" tabindex="-1"></li>
+              <li><a href="products.html#incineratorcontrol">Incinerator Control</a></li>
+              <li class="divider" tabindex="-1"></li>
+              <li><a href="products.html#tankgauging">Tank Gauging</a></li>
+              <li class="divider" tabindex="-1"></li>
+              <li><a href="products.html#scadacontrolmonitoring">SCADA Condition Monitoring</a></li>
+            </ul>
+          </div>
+      <div class="navbar-fixed">
+
+          <!-- <ul id="dropdown1" class="dropdown-content">
+              <li><a href="#!">one</a></li>
+              <li><a href="#!">two</a></li>
+              <li class="divider"></li>
+              <li><a href="#!">three</a></li>
+            </ul> -->
+        <nav class="right nav-wrapper white">
+          <div class="container">
+            <a href="" class="brand-logo logofont black-text left">
+              <img src="images/providence-logo.png" height=70px; alt="logo">
+            </a>
+            <a href="" class="sidenav-trigger right" data-target="mobile-menu">
+              <i class="material-icons accentcolor right">menu</i>
+            </a>
+            <ul class="right hide-on-med-and-down navbartext">
+              <li>
+                <a href="index.html" class="primarycolor">Home</a>
+              </li>
+              <li>
+                <a href="about-us.html" class="dropdown-trigger" data-target="aboutus">About</a>
+              </li>
+              <li>
+                <a href="services.html" class="dropdown-trigger" data-target="service">Services</a>
+              </li>
+              <li>
+                <a href="projects.html" class="dropdown-trigger" data-target="projects">Projects</a>
+              </li>
+              <li>
+                <a href="products.html" class="dropdown-trigger" data-target="products">Products</a>
+              </li>
+              <!-- <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li> -->
+              <li>
+                  <a href="Training.html">Training</a>
+                </li>
+              <li>
+                <a href="Career.html">Careers</a>
+              </li>
+              <li>
+                <a href="#Contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <ul class="sidenav navbartext" id="mobile-menu">
+        <li>
+          <a href="index.html" class="primarycolor">Home</a>
+        </li>
+        <li>
+          <a href="about-us.html">About</a>
+        </li>
+        <li>
+          <a href="services.html">Services</a>
+        </li>
+        <li>
+          <a href="projects.html">Projects</a>
+        </li>
+        <li>
+          <a href="products.html">Products</a>
+        </li>
+        <li>
+            <a href="Training.html">Training</a>
+          </li>
+        <li>
+          <a href="Career.html">Careers</a>
+        </li>
+        <li>
+          <a href="#Contact">Contact</a>
+        </li>
+      </ul>
+    </header>
+
+    <!--Slider-->
+    <section class="slider">
+      <ul class="slides">
+        <li>
+          <img
+            src="images/automation1.jpg"
+            alt=""
+            style="background-attachment: fixed"
+          />
+          <div class="caption left-align">
+            <h3 class="h3-lg">We make Intelligent</h3>
+            <h3 class="h3-lg">automation & control systems</h3>
+            <!-- <h5 class="h-sml white-text hide-on-small-only">
+              We are dedicated to providing complete service spectrum insphere
+              of Instrumentation, Process Control and Industrial Automation for
+              both Oil & Gas and other industrial sectors of Nigerian economy
+            </h5> -->
+          </div>
+        </li>
+        <li>
+          <img
+            src="images/automation2.jpg"
+            alt=""
+            style="background-attachment: fixed"
+          />
+          <div class="caption left-align">
+            <h1 class="h3-lg">
+              Innovative Software Solutions
+            </h1>
+            <!-- <div class="alignwell">
+              <div>
+                <h1 class="h3-lg2 primarycolor">Limited</h1>
+              </div>
+              <div>
+                <h5 class="h-sml2 white-text hide-on-small-only">
+                  we are efficient, smart , intelligent, and commited <br />we
+                  can reach achieve your goals together
+                </h5>
+              </div> -->
+            <!-- </div>  -->
+          </div>
+        </li>
+        <li>
+          <img
+            src="images/automation3.jpg"
+            alt=""
+            style="background-attachment: fixed"
+          />
+          <div class="caption left-align">
+            <h3 class="h3-lg">Engineering Procurement & </h3>
+            <h3 class="h3-lg">Integration</h3>
+            <!-- <h5 class="h-sml white-text hide-on-small-only">
+              We are dedicated to providing complete service spectrum insphere
+              of Instrumentation, Process Control and Industrial Automation for
+              both Oil & Gas and other industrial sectors of Nigerian economy
+            </h5> -->
+          </div>
+        </li>
+      </ul>
+    </section>
+
+
+    <!-- Slider 2 -->
+
+    
+    <!--What We Do-->
+
+    <section class="whatwedo section scrollspy" id="About">
+      <div class="container">
+        <h2 class="center-align bold mg-bt">WHAT WE DO</h2>
+        <div class="row">
+          <div class="col s12 l3">
+            <div class="card z-depth-2">
+              <div class="card-image">
+                <img src="images/automationengineering.jpg" alt="automation image" height="180px" />
+              </div>
+              <div class="card-content center-align">
+                <h6 class="bold">Control & Automation</h6>
+                We provide standard engineering services utilizing the best in
+                class control technologies and innovation to proffer solutions
+                for our clients...
+              </div>
+              <div class="card-action right-align">
+                <a href="services.html#authomationcontrol" class="btn transparent z-depth-0 primarycolor bold">
+                  <span
+                    >Learn More
+                    <i class="material-icons right">chevron_right</i>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 l3">
+            <div class="card z-depth-2">
+              <div class="card-image">
+                <img src="images/systemintegration3.jpg" alt="automation image"  height="180px"/>
+              </div>
+              <div class="card-content center-align">
+                <h6 class="bold">System Integration</h6>
+                We have a wide scope ranging from integration of one or more
+                component systems into your existing Control and Automation
+                system<br>...
+              </div>
+              <div class="card-action right-align">
+                <a href="services.html#systemintegrator" class="btn transparent z-depth-0 primarycolor bold">
+                  <span
+                    >Learn More
+                    <i class="material-icons right">chevron_right</i>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 l3">
+            <div class="card z-depth-2">
+              <div class="card-image">
+                <img
+                  src="images/procurement.jpg" height="180px"
+                  alt="automation image"
+                />
+              </div>
+              <div class="card-content center-align">
+                <h6 class="bold">Engineering Procurement</h6>
+                For top class services in the procurement of heavy equipment and
+                infrastructure deployment<br><br>...
+                <span><br></span>
+              </div>
+              <div class="card-action right-align">
+                <a href="services.html#procurement" class="btn transparent z-depth-0 primarycolor bold">
+                  <span
+                    >Learn More
+                    <i class="material-icons right">chevron_right</i>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 l3">
+            <div class="card z-depth-2">
+              <div class="card-image">
+                <img
+                  src="images/charles-pjAH2Ax4uWk-unsplash.jpg"
+                  alt="automation image"
+                  height="180px"
+                />
+              </div>
+              <div class="card-content center-align">
+                <h6 class="bold">Software Solutions</h6>
+                We provide standard engineering services utilizing the best in
+                class control technologies and innovation to proffer solutions
+                for our clients...
+              </div>
+              <div class="card-action right-align">
+                <a href="services.html" class="btn transparent z-depth-0 primarycolor bold">
+                  <span
+                    >Learn More
+                    <i class="material-icons right">chevron_right</i>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Industries we serve-->
+
+    <section class="secondarycolor section">
+      <div class="container scrollspy mg-tp" id="Services">
+        <h2 class="center-align headings bold">INDUSTRIES WE SERVE</h2>
+
+        <div class="row mg-tp">
+          <div class="col s12 l4">
+            <div
+              class="featured-item hover-outline brand-hover radius-4 equal-height-column">
+              <div class="icon">
+                <img
+                  height="100px"
+                  src="images/oil-and-gasc.png"
+                  alt="Sofware Icon"
+                />
+              </div>
+              <div class="desc">
+                <h6 class="boldrow">Oil & Gas</h6>
+                <p>
+                We have a wide scope ranging from integration of one or more component systems into your existing Control and Automation system
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 l4">
+            <div
+              class="featured-item hover-outline brand-hover radius-4 equal-height-column">
+              <div class="icon" style="padding-top: 0px">
+                <img
+                  height="100px"
+                  src="images/oil-and-gasc.png"
+                  alt="Sofware Icon"
+                />
+              </div>
+              <div class="desc">
+                <h6 class="boldrow">Power</h6>
+                <p>
+                 We have a wide scope ranging from integration of one or more component systems into your existing Control and Automation system
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 l4">
+            <div class="featured-item hover-outline brand-hover radius-4 equal-height-column">
+              <div class="icon">
+                <img
+                  height="100px"
+                  src="images/governmentc.png"
+                  alt="Sofware Icon"
+                />
+              </div>
+              <div class="desc">
+                <h6 class="boldrow">Government Agencies</h6>
+                <p>
+                 We have a wide scope ranging from integration of one or more component systems into your existing Control and Automation system
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mg-tp">
+                <div class="col s12 l4">
+                  <div
+                    class="featured-item hover-outline brand-hover radius-4 equal-height-column">
+                    <div class="icon">
+                      <img
+                        
+                        height="100px"
+                        src="images/petrolchemicalc.png"
+                        alt="Sofware Icon"
+                      />
+                    </div>
+                    <div class="desc">
+                      <h6 class="boldrow">Petrochemical Industry</h6>
+                      <p>
+                      We have a wide scope ranging from integration of one or more component systems into your existing Control and Automation system
+                      </p>
+                    </div>
+                  </div>
+                </div>
+      
+                <div class="col s12 l4">
+                  <div
+                    class="featured-item hover-outline brand-hover radius-4 equal-height-column">
+                    <div class="icon">
+                      <img
+                        
+                        height="100px"
+                        src="images/manufacturingc.png"
+                        alt="Sofware Icon"
+                      />
+                    </div>
+                    <div class="desc">
+                      <h6 class="boldrow">Cement Manufacturing</h6>
+                      <p>
+                       We have a wide scope ranging from integration of one or more component systems into your existing Control and Automation system
+                      </p>
+                    </div>
+                  </div>
+                </div>
+      
+                <div class="col s12 l4">
+                  <div class="featured-item hover-outline brand-hover radius-4 equal-height-column">
+                    <div class="icon">
+                      <img
+                        
+                        height="100px"
+                        src="images/petrolchemicalc.png"
+                        alt="Sofware Icon"
+                      />
+                    </div>
+                    <div class="desc">
+                      <h6 class="boldrow">Software development</h6>
+                      <p>
+                       We have a wide scope ranging from integration of one or more component systems into your existing Control and Automation system
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      </div>
+    </section>
+    <!--Get in Touch-->
+
+<section class="section touch scrollspy" id="Contact">
+    <div class="container contact-form">
+            <h4 class="white-text center-align bold">GET IN TOUCH</h4>
+        <div class="row">
+                <div class="col s12 l5">
+                    
+                    <h6 class="boldrow white-text">Email</h6>
+                    <div class="txtb">
+                    <input type="email" name ="" value="" Placeholder = "Enter Your Email" >
+                </div>
+                    <div>
+                    <h6 class="boldrow white-text">Message</h6> 
+                    <textarea placeholder = "Message"></textarea>
+                    </div>
+                    <div class="left-align">
+                    <a href="#" class="btn right accentcolorbg">Submit</a>
+                </div>
+                </div>
+
+                <div class="col s12 l5 offset-l2" style="margin-top:10px">
+                        <h6 class="boldrow accentcolor">Head Office</h6>
+                        <p class="boldrow white-text">2, Payne Close, <br> Behind Trumed Pharmacy, <br>Off State Hospital Road, Ring Road <br> P.O.Box 1338,<br> Ibadan, Nigeria.
+                        <h6 class="boldrow accentcolor">U.S Office</h6>
+                        <p class="boldrow white-text">1307, William Beanes Road, Upper Malboro,<br> MD 20772</p>
+                        <!-- <i class="material-icons accentcolor left">phone</i> -->
+                        <h6 class="boldrow accentcolor">Telephone</h6>
+                        <p class="boldrow white-text">
+                              +234-8037166765
+                        </p>
+                </div>
+        </div>
+        
+    </div>
+</section>
+
+    <!--Our Clients-->
+<section class="section scrollspy" id="clients">
+<div class="container">
+  <div>
+    <h1 class="center-align headings bold">SOME OF OUR CLIENTS</h1>
+  <h6 class="center-align hide-on-med-and-down bold1">We look forward to working with you, while we deliver with maximum<br> satisfaction and efficiency</h6>
+  <h6 class="center-align hide-on-large-only">We look forward to working with you, while we deliver with maximum satisfaction and efficiency</h6>
+</div>
+
+<div class="brand-carousel owl-carousel section-padding">
+    <div class="single-logo"><img src="images/petrochemical-logo.png" alt="Petrochemical Image"></div>
+    <div class="single-logo"><img src="images/Dangote20Cement.png" alt="Dangote Image"></div>
+    <div class="single-logo"><img src="images/Lafarge-Transparent.png" alt="Lafarge Image"></div>
+  </div>
+</div>
+</section>
+
+
+<!--Footer-->
+<section id="footer2">
+<div class="footer page-footer footercolor">
+  <div class="row">
+    <div class="col l9 s12" style="margin-top: 10px">
+      <ul class="pagination center-align scrollspy  footertextcolor">
+        <li class="active waves-effect transparent scrollspy"><a href="#About"><h6 class="footertextcolor">About</h6></a></li>
+        <li class="active waves-effect  transparent scrollspy"><a href="#!"><h6 class="footertextcolor">Maps</h6></a></li>
+        <li class=" active waves-effect transparent scrollspy"><a href="#!"><h6 class="footertextcolor">Gallery</h6></a></li>
+        <li class=" active waves-effect transparent scrollspy"><a href="#!"><h6 class="footertextcolor">Projects</h6></a></li>
+        <li class="active waves-effect transparent scrollspy"><a href="#!" ><h6 class="footertextcolor">Training</h6></a></li>
+        <li class=" active waves-effect transparent scrollspy"><a href="#Services"><h6 class="footertextcolor">Services</h6></a></li>
+        <li class="active waves-effect transparent scrollspy"><a href="#Contact" ><h6 class="footertextcolor">Contact Us</h6></a></li>
+      </ul>
+      <hr class="hrcolor">
+      <h6 class="center-align footertext">Copyright © 2019 ProvidenceResearch | All Rights Reserved </h6>
+    </div>
+    <div class="col l3 s12  center" style="margin-top:0px">
+      <a href="" class="brand-logo logofont black-text ">
+        <img src="images/Providence internship white.png" height=100px; alt="logo" style="padding-top: 14px;">
+      </a>
+    </div>
+ 
+  </div>
+</div>
+</section>
+
+    <!--Footer-->
+    <!-- <section id="footer">
+      <div class="footer page-footer footercolor">
+      <div class="container">
+          <h6 class="center-align"><a href="" class="bold logofont white-text">Providence Research</a></h6>
+      </div>
+      <div class="row">
+          <ul class="pagination center-align scrollspy">
+              <li class="active waves-effect transparent scrollspy"><a href="#About"><h6 class="footertextcolor">About</h6></a></li>
+              <li class="active waves-effect  transparent scrollspy"><a href="#!"><h6 class="footertextcolor">Maps</h6></a></li>
+              <li class=" active waves-effect transparent scrollspy"><a href="#!"><h6 class="footertextcolor">Gallery</h6></a></li>
+              <li class=" active waves-effect transparent scrollspy"><a href="#!"><h6 class="footertextcolor">Projects</h6></a></li>
+              <li class="active waves-effect transparent scrollspy"><a href="#!" ><h6 class="footertextcolor">Training</h6></a></li>
+              <li class=" active waves-effect transparent scrollspy"><a href="#Services"><h6 class="footertextcolor">Services</h6></a></li>
+              <li class="active waves-effect transparent scrollspy"><a href="#Contact" ><h6 class="footertextcolor">Contact Us</h6></a></li>
+            </ul>
+      </div>
+      <hr class="hrcolor">
+      <h6 class="center-align footertextcolor">Copyright © 2019 ProvidenceResearch | All Rights Reserved </h6>
+      </div>
+    </section> -->
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="owlCarousel/owl.carousel.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+      $('.sidenav').sidenav();
+      $('.scrollspy').scrollSpy();
+      $(".dropdown-trigger").dropdown();
+      $(document).ready(function() {
+        $(".slider").slider({
+          indicators: false,
+          height: 600,
+          transition: 500,
+          interval: 5000
+        });
+      });
+      /*this is the sript for the dropdown*/
+      $('.dropdown-trigger').dropdown({ hover: true, coverTrigger:false, constrainWidth: false});
+
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    autoplay:true,
+    nav:false,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        }
+    }
+})
+
+$(document).ready(function(){
+  $('.sidenav').sidenav().on('click tap', 'li a', () => {
+    $('.sidenav').sidenav('close');
+  });
+});
+    </script>
+  </body>
+</html>

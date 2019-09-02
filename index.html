@@ -1,0 +1,125 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/materialize/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,900&display=swap" rel="stylesheet">
+    <style>
+        body{
+            margin: 0px;
+        }
+        #area {
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0.74) 0%, rgba(0, 0, 0, 0) 97.51%), url('image/pic.jpg');
+            width: 100%;
+            min-height:100vh;
+            background-size: cover;
+        }
+        h1{
+            position: absolute;
+            width: 60%; 
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 5rem;
+            line-height: 6rem;
+            color: #FFFFFF;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.71);
+            margin-top: 15rem;
+            margin-left: 12rem;
+        }
+        button{
+            position: absolute;
+            width:180px;
+            height: 43px;
+            left: 117px;
+            margin-top: 28rem;
+            margin-left: 5rem;
+        }
+        #area a{
+            color: #0F3A4C;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+        }
+        button a i{
+            padding-top: 8px;
+        }
+        @media screen and (max-width: 700px) {
+        h1{
+               font-size: 4rem;
+               /* margin-top: 8rem; */
+                margin-left: 8rem;
+                width: 70%;
+                    }
+        button {
+            margin-top: 30rem;
+            margin-left: 0.4rem;
+        }
+        #area h1{
+            margin-top:30%;
+            line-height: 4rem;
+        }
+        }
+    </style>
+    <title>Calculator</title>
+</head>
+<body>
+    
+    <div id="area">
+        <h1 class="h1-lg">Cable Conductor Size Calculator</h1>
+        <button onclick="window.location.href = 'newIndex.html';"><a>Go to Calculator</a></button>
+    </div>
+
+    <script>
+    var roh;
+    var conductorType = "alluminium";
+    var param = {
+        loadValue : 40,
+        distbtwCable : 40,
+        permDrop : 4,
+        sysVolt : 30,
+        fp : 0.8,
+        loadType : "threePhase",
+        loadUnit : "current"};
+
+    if (conductorType == "alluminium"){
+        roh = (2.65 * (10**(-8)));
+    } else{
+        roh = (1.68 * (10**(-8)))
+    }
+    
+     function area(param) {
+        if (param.loadType == "dc"){
+              if (param.loadUnit == "current"){
+                 return area = (((100 * param.loadValue * roh * param.distbtwCable)/((100 - param.permDrop) * param.sysVolt))*(10**6));
+                    } else{
+                         return area = (((100 * param.loadValue * roh * param.distbtwCable)/((100 - param.permDrop) * (param.sysVolt**2)))*(10**6))
+              }
+              } else if (param.loadType == "singlePhase"){
+                        if (param.loadUnit == "current"){
+                               return area = (((100 * param.loadValue * roh * param.distbtwCable)/((100 - param.permDrop) * param.sysVolt))*(10**6));
+                     } else{
+                              return area = (((100 * param.loadValue * roh * param.distbtwCable)/((100 - param.permDrop) * ((param.sysVolt**2) * param.fp)))*(10**6))
+                     }
+                     } else if (param.loadType == "threePhase"){
+                              if (param.loadUnit == "current"){
+                                    return area = (((100 * param.loadValue * roh * param.distbtwCable)/((100 - param.permDrop) * (3**0.5)*param.sysVolt))*(10**6));
+                     } else{
+                                    return area = (((100 * param.loadValue * roh * param.distbtwCable)/(( 3 * (100 - param.permDrop)) * (param.sysVolt**2)))*(10**6))
+                           }
+                            } else{
+                                     return "it is not a dc type load value"
+        
+              }
+           }
+      console.log(area(param))
+      console.log(roh)
+
+    
+    </script>
+</body>
+</html>

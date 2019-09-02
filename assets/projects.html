@@ -1,0 +1,568 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="materialize-v1.0.0/materialize/css/materialize.min.css" type="text/css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=IM+Fell+Double+Pica:400i|Raleway:400,700&display=swap" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="assets/css/macy.css">
+    <style>
+        body{
+            font-family: 'Raleway', sans-serif;;
+        }
+
+        /*all styling for the header goes here*/
+        .header{
+            background: url(images/projectsimg.png);
+            background-color: black;
+            background-size: cover;
+            background-position: center;
+            min-height:40vh;          
+        }
+
+        .container{
+          width:90%;
+        }
+
+        .btn{
+          line-height: 33px;
+        }
+        nav .navbartext{
+                color: #292929;  
+        }
+
+        nav{
+          width: 100vw;
+        }
+
+        a:not(.btn), a:visited:not(.btn){
+          color:inherit;
+        }
+
+        a:not(.btn):hover{
+          color: #292929;
+        }
+        .nav-adjust{
+            padding-top: 10px;
+        }
+        .text-active{
+            color: #08aaeb;
+            font-style: normal;
+            font-weight: 500
+        }
+        .nav-text{
+            color: #292929;
+            font-style: normal;
+            font-weight: 400
+        }
+        .head-word{
+            font-family: Raleway;
+            font-style: bold;
+            font-weight: 700;
+            font-size: 52px;
+            line-height: 58px;
+            position: absolute;
+            width: 1043px;
+            height: 150px;
+            left: 291px;
+            top: 100px;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
+        }
+        .head-word-small{
+            position: absolute;
+            width: 600px;
+            height: 28px;
+            left: 508px;
+            top: 190px;       
+            font-family: Raleway;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 24px;
+            text-align: justify;
+            color: #FFFFFF;
+        }
+
+        /*this is the styling for the groups*/
+        .adjust{ 
+        font-family: Raleway;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 28px;
+        text-align: justify;
+        letter-spacing: 0.035em;
+        }
+        .adjust-headword{
+            font-family: Raleway;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 34px;
+            line-height: 120.9%;
+        }
+        .img-adjust{
+            margin-top: 60px;
+            max-width: 100%;
+            height: 400px;
+        }
+        .adjust{ 
+        font-family: Raleway;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 28px;
+        text-align: justify;
+        letter-spacing: 0.035em;
+        }
+        .row-adjust{
+            margin-right:110px;
+        }
+
+        /* this is the styling for the second navigation bar */
+        .sec-nav{
+            
+        }
+        .sec-nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color:#08aaeb;
+            margin-left: 0px;
+        }
+        
+        .sec-nav li {
+            float: left;
+            
+        }
+        
+        .sec-nav li a {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            font-weight: 700;
+            font-size: 12px;
+            padding: 30px 50px;
+            text-decoration: none;
+            padding-left: 145px;
+            padding-right:145px;
+        }
+        
+        .sec-nav li a:hover:not(.active){
+            background-color: white;
+            color: #08aaeb
+        }
+        .sec-nav li a.active {
+            background-color: white;
+            color: #08aaeb
+        }
+        .blue li a.active {
+            background-color: white;
+            color: #08aaeb
+        }
+        .blue-section{
+            background: #DEF1FB;
+            padding-bottom: 60px;
+        }
+
+
+        /*this is the styling for the mansory grid*/
+        .grid-item img:hover{
+            transform: scale(1.1);
+            border-radius: 4px;
+            border-bottom: 2px solid #EB5008;
+        }
+       
+        #masonry-grid img:hover{
+            opacity: 0.4;
+            filter: alpha(opacity=40); 
+        }     
+        
+        .touch{
+          background-image: url(images/phone3.jpg);
+          height:90vh !important;
+          background-size:cover;
+      }
+
+      .footerlogo div{
+        padding:10px;
+        background:#dddddd;
+        /* border-left:6px solid #fff; */
+        line-height:60px;
+      }
+
+      hr{
+        margin-top: -20px;
+        padding-top: opx;
+        margin-left: 20px;
+        padding-left: 20px !important;
+        width:80%;
+        border: 1px solid #C4C4C4;
+        align-content: center !important;
+      }
+
+      @media screen and (max-width: 700px) {
+        /* header{
+                        min-height:500px;
+                    } */
+        .h3-lg {
+          font-style: normal;
+          font-weight: 800;
+          font-size: 40px;
+          line-height: 4rem;
+          margin: 0px;
+          color: #ffffff;
+        }
+
+        .headings{
+          color:#282828;
+          font-weight: 800;
+          font-size: 40px;
+          line-height: 4rem;
+          margin: 0px;
+        }
+
+        .h3-lg2 {
+          font-style: normal;
+          font-weight: 800;
+          font-size: 52px;
+          line-height: 4rem;
+          margin: 8px 0px;
+          color: #ffffff;
+          justify-content: left;
+        }
+        .footer{
+        height:40vh;
+        }
+        .touch{
+            height:auto;
+        }
+
+        .header{
+           
+            background-color: black;
+            background-size: cover;
+            background-position: center;
+            min-height:40vh;
+            width:100vw;          
+        }
+
+        .head-word{
+            font-family: Raleway;
+            font-style: bold;
+            font-weight: 700;
+            font-size: 2em;
+            line-height: 3rem;
+            height: 150px;
+            left: 10px;
+            top: 15%;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
+        }
+        .headings{
+          font-size: 32px;
+          margin:20px 0px 0px 20px;
+          padding:20px 0px 0px 20px;
+          align-content: center;
+        }
+        .pagination li{ 
+        height:30px ;
+        margin-left: 10px;
+      }
+      }
+    </style>
+    <title>Projects</title>
+</head>
+<body>
+    <header>
+
+        <!--this is the drop down for the navigation bar-->
+        <div>
+            <ul class = "dropdown-content" id="aboutus">
+              <li><a href="about-us.html#whoweare">Who we are</a></li>
+              <li class="divider" tabindex="-1"></li>
+              <li><a href="about-us.html#mission#cooperateresponsibilities">Mission</a></li>
+              <li class="divider" tabindex="-1"></li>
+              <li><a href="about-us.html">Co-operate Responsibility</a></li>
+              <li class="divider" tabindex="-1"></li>
+              <li><a href="about-us.html#team">Team</a></li>
+            </ul>
+          </div>
+         <div>
+            <ul class = "dropdown-content" id="projects">
+              <li><a href="projects.html#engineeringprocurementcontrol">Engineering Procurement & Control</a></li>
+              <li class="divider" tabindex="-1"></li>
+              <li><a href="projects.html#systemintegrationprojects">System Integration Projects</a></li>
+              <li class="divider" tabindex="-1"></li>
+              <li><a href="projects.html#controlautomation">Control & Automation</a></li>
+              <li class="divider" tabindex="-1"></li>
+              <li><a href="projects.html#training">Training</a></li>
+            </ul>
+          </div>
+         <div>
+            <ul class = "dropdown-content" id="service">
+              <li><a href="services.html#controlautomation">Control & Authomation</a></li>
+              <li class="divider" tabindex="-1"></li>
+              <li><a href="services.html#systemintegration">System Integration</a></li>
+              <li class="divider" tabindex="-1"></li>
+              <li><a href="services.html#engineeringprocurement">Engineering procurement</a></li>
+              <li class="divider" tabindex="-1"></li>
+              <li><a href="services.html#softwaresolutions">Software Solutions</a></li>
+            </ul>
+          </div>
+          <div>
+              <ul class = "dropdown-content" id="products">
+                <li><a href="products.html#turbotronics">Turbotronics</a></li>
+                <li class="divider" tabindex="-1"></li>
+                <li><a href="products.html#boilercontrol">Boiler Control</a></li>
+                <li class="divider" tabindex="-1"></li>
+                <li><a href="products.html#incineratorcontrol">Incinerator Control</a></li>
+                <li class="divider" tabindex="-1"></li>
+                <li><a href="products.html#tankgauging">Tank Gauging</a></li>
+                <li class="divider" tabindex="-1"></li>
+                <li><a href="products.html#scadacontrolmonitoring">SCADA Condition Monitoring</a></li>
+              </ul>
+            </div>
+        <div class="navbar-fixed">
+          <nav class="right nav-wrapper white">
+            <div class="container">
+                <a href="" class="brand-logo logofont black-text left">
+                    <img src="images/providence-logo.png" height=70px; alt="logo">
+                  </a>
+              <a href="" class="sidenav-trigger right" data-target="mobile-menu">
+                <i class="material-icons accentcolor right">menu</i>
+              </a>
+              <ul class="right hide-on-med-and-down navbartext">
+                <li>
+                  <a href="index.html">Home</a>
+                </li>
+                <li>
+                  <a href="about-us.html" class="dropdown-trigger"  data-target="aboutus">About</a>
+                </li>
+                <li>
+                  <a href="services.html" class="dropdown-trigger"  data-target="service">Services</a>
+                </li>
+                <li>
+                  <a href="projects.html" class="primarycolor dropdown-trigger"  data-target="projects">Projects</a>
+                </li>
+                <li>
+                  <a href="products.html" class="dropdown-trigger"  data-target="products">Products</a>
+                </li>
+                <li>
+                        <a href="Training.html">Training</a>
+                </li>
+                <li>
+                  <a href="Career.html">Careers</a>
+                </li>
+                <li>
+                  <a href="index.html#Contact">Contact</a>
+                </li>
+              </ul>
+            </div>
+        
+        </div>
+        <ul class="sidenav navbartext" id="mobile-menu">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="about-us.html">About</a>
+          </li>
+          <li>
+            <a href="services.html">Services</a>
+          </li>
+          <li>
+            <a href="projects.html"   class="primarycolor">Projects</a>
+          </li>
+          <li>
+            <a href="products.html">Products</a>
+          </li>
+          <li>
+                <a href="Training.html">Training</a>
+            </li>
+          <li>
+            <a href="Career.html">Careers</a>
+          </li>
+          <li>
+            <a href="index.html#Contact">Contact</a>
+          </li>
+        </ul>
+    </nav>
+</header>
+<section class="header">
+            <!-- this is the headword section -->
+        <div class="container">
+            <h1 class="white-text head-word ">
+                We are <span class="blue-text">Providence Research </br>Limited</span>
+            </h1>
+            <p class="head-word-small">we are efficient, smart , intelligent, and commited<br>
+            we can achieve your goals together</p>
+        </div>  
+    </section> 
+        <!-- End of head word section -->
+    
+    <main>
+        <!--this is the beginning of the second navbar for the mainbody navigtion with the blue background-->
+        <div class="row sec-nav hide-on-med-and-down white-text">           
+                <ul class="blue">
+                    <li class="active" style="background-color: white;"><a href="#all" class=" blue-text">All</a></li>
+                    <li class=""><a href="#mission" >On site</a></li>
+                    <li class=""><a href="#team">Results</a></li>
+                    <li class=""><a href="#contact">Team</a></li>
+                </ul>
+        </div>
+        <!--this is the end of the second navbar for the mainbody navigtion with the blue background-->
+
+        <!--this is the styling for the mansory grid-->
+        <div id='macy-container'  >
+          <div class="grid-item grid-item--width2"><img src="images/automation0.png" alt=""></div>
+          <div class="grid-item"><img src="images/Basics_Area3.jpg" alt=""></div>
+          <div class="grid-item"><img src="images/automation1.jpg" alt=""></div>
+          <div class="grid-item"><img src="images/automation2.jpg" alt=""></div>
+          <div class="grid-item"><img src="images/automation3.jpg" alt=""></div>
+          <div class="grid-item"><img src="images/automation4.jpg" alt=""></div>
+          <div class="grid-item"><img src="images/automation5.jpg" alt=""></div>
+          <div class="grid-item"><img src="images/automation7.jpg" alt=""></div>
+          <div class="grid-item grid-item--width2"><img src="images/automation8.jpg" alt=""></div>
+          <div class="grid-item"><img src="images/automation9.jpg" alt=""></div>
+          <div class="grid-item"><img src="images/automationengineering.jpg" alt=""></div>
+          <div class="grid-item"><img src="images/bill-oxford--fGqsewtsJY-unsplash.jpg" alt=""></div>
+          <div class="grid-item"><img src="images/call.jpg" alt=""></div>
+          <div class="grid-item"><img src="images/charles-pjAH2Ax4uWk-unsplash.jpg" alt=""></div>
+          <div class="grid-item"><img src="images/charles-pjAH2Ax4uWk-unsplash.jpg" alt=""></div>
+          <div class="grid-item"><img src="images/design.jpg" alt=""></div>
+          <div class="grid-item grid-item--width2"><img src="images/download.jpg" alt=""></div>
+          <div class="grid-item"><img src="images/phone3.jpg" alt=""></div>
+          <div class="grid-item"><img src="images/systemintegration2.jpg" alt=""></div>
+          <div class="grid-item"><img src="images/systemintegration3.jpg" alt=""></div>
+          <div class="grid-item"><img src="images/yellowhead.jpg" alt=""></div>
+        
+      </div>
+    </main>
+   
+<section class="section touch scrollspy" id="Contact">
+    <div class="container contact-form">
+            <h1 class="white-text center-align h3-lg bold">GET IN TOUCH</h1>
+        <div class="row">
+                <div class="col s12 l5">
+                    
+                    <h6 class="boldrow white-text">Email</h6>
+                    <div class="txtb">
+                    <input type="email" name ="" value="" Placeholder = "Enter Your Email" >
+                </div>
+                    <div>
+                    <h6 class="boldrow white-text">Message</h6> 
+                    <textarea placeholder = "Message"></textarea>
+                    </div>
+                    <div class="left-align" style="margin-top:8px">
+                    <a href="#" class="btn right accentcolorbg valign-wrapper" style="padding-left:12px">Submit</a>
+                </div>
+                </div>
+
+                <div class="col s12 l5 offset-l2" style="margin-top:10px">
+                        <h6 class="boldrow accentcolor">Head Office</h6>
+                        <p class="boldrow white-text">2, Payne Close, <br> Behind Trumed Pharmacy, <br>Off State Hospital Road, Ring Road <br> P.O.Box 1338,<br> Ibadan, Nigeria.
+                        <h6 class="boldrow accentcolor">U.S Office</h6>
+                        <p class="boldrow white-text">1307, William Beanes Road, Upper Malboro,<br> MD 20772</p>
+                        <!-- <i class="material-icons accentcolor left">phone</i> -->
+                        <h6 class="boldrow accentcolor">Telephone</h6>
+                        <p class="boldrow white-text">
+                        +234-8037166765
+                        </p>
+                </div>
+        </div>
+    </div>
+</section>
+
+
+<!--Footer-->
+<section id="footer2">
+<div class="footer page-footer footercolor">
+  <div class="row">
+    <div class="col l9 s12" style="margin:30px 0px 3px 0px">
+      <ul class="pagination center-align scrollspy  footertextcolor">
+        <li class="active waves-effect transparent scrollspy"><a href="#About"><h6 class="footertextcolor">About</h6></a></li>
+        <li class="active waves-effect  transparent scrollspy"><a href="#!"><h6 class="footertextcolor">Maps</h6></a></li>
+        <li class=" active waves-effect transparent scrollspy"><a href="#!"><h6 class="footertextcolor">Gallery</h6></a></li>
+        <li class=" active waves-effect transparent scrollspy"><a href="#!"><h6 class="footertextcolor">Projects</h6></a></li>
+        <li class="active waves-effect transparent scrollspy"><a href="#!" ><h6 class="footertextcolor">Training</h6></a></li>
+        <li class=" active waves-effect transparent scrollspy"><a href="#Services"><h6 class="footertextcolor">Services</h6></a></li>
+        <li class="active waves-effect transparent scrollspy"><a href="#Contact" ><h6 class="footertextcolor">Contact Us</h6></a></li>
+      </ul>
+      <hr class="hrcolor" style="margin:0px 0px 0px 100px">
+      <h6 class="center-align footertext"style="margin-top: 10px">Copyright © 2019 ProvidenceResearch | All Rights Reserved </h6>
+    </div>
+    <div class="col l3 s12  center" style="margin-top:0px">
+      <a href="" class="brand-logo logofont black-text ">
+        <img src="images/Providence internship white.png" height=100px; alt="logo" style="padding-top: 14px;">
+      </a>
+    </div>
+ 
+  </div>
+</div>
+</section>
+        <!-- Footer
+        <section id="footer">
+          <div class="footer page-footer footercolor">
+          <div class="container">
+              <h6 class="center-align"><a href="" class="bold logofont white-text">Providence Research</a></h6>
+          </div>
+          <div class="row">
+              <ul class="pagination center-align scrollspy">
+                  <li class="active waves-effect transparent scrollspy"><a href="#About"><h6 class="footertextcolor">About</h6></a></li>
+                  <li class="active waves-effect  transparent scrollspy"><a href="#!"><h6 class="footertextcolor">Maps</h6></a></li>
+                  <li class=" active waves-effect transparent scrollspy"><a href="#!"><h6 class="footertextcolor">Gallery</h6></a></li>
+                  <li class=" active waves-effect transparent scrollspy"><a href="#!"><h6 class="footertextcolor">Projects</h6></a></li>
+                  <li class="active waves-effect transparent scrollspy"><a href="#!" ><h6 class="footertextcolor">Training</h6></a></li>
+                  <li class=" active waves-effect transparent scrollspy"><a href="#Services"><h6 class="footertextcolor">Services</h6></a></li>
+                  <li class="active waves-effect transparent scrollspy"><a href="#Contact" ><h6 class="footertextcolor">Contact Us</h6></a></li>
+                </ul>
+          </div>
+          <hr class="hrcolor">
+          <h6 class="center-align footertextcolor">Copyright © 2019 ProvidenceResearch | All Rights Reserved </h6>
+          </div>
+        </section> -->
+    
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="owlCarousel/owl.carousel.js"></script>
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script src="macy.js"></script>
+        <script>
+            var masonry = new Macy({
+                container: '#macy-container',
+                trueOrder: false,
+                waitForImages: false,
+                useOwnImageLoader: false,
+                debug: true,
+                mobileFirst: true,
+                columns: 1,
+                margin: {
+                    y: 10,
+                    x: '1%',
+                },
+                breakAt: {
+                    1200: 6,
+                    940: 5,
+                    520: 3,
+                    400: 2
+                },
+            });
+        </script>
+        <script>
+          $('.sidenav').sidenav();
+          $('.scrollspy').scrollSpy();
+          /*this is the sript for the dropdown*/
+          $('.dropdown-trigger').dropdown({ hover: true, coverTrigger:false, constrainWidth: false});
+        </script>
+        </main>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="materialize/js/materialize.min.js"></script>
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    </body>
+    </html>
